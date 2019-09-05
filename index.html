@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Skye Shirlow Art </title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" >
+    <link rel="stylesheet" type=text/css href="./css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+
+<body class="body">
+
+    <header class="header">
+
+        <div class="container-fluid">
+
+            <div id="banner">
+                
+                <h1  class="title" id="title"> Skye Shirlow Collection </h1>
+                <h2 class="title-2"> Traditional and Digital Art </h2>
+                <img class="logoPlaceholder" id="logoPlaceholder" src="./images/logo_placeholder.png" alt="Logo Placeholder">
+
+            </div>
+
+            <div>   
+
+                <button class="menu-button" id="menu" onclick="menu_dropdown(); menu2_dropdown ();">
+
+                    <ul class="menu-list">
+                        <li><a href="#"> Home </a></li>
+                        <li><a href="D:\Users\Skye\Documents\storefront\html\about.html"> About </a></li>
+                        <li><a href="D:\Users\Skye\Documents\storefront\html\gallery.html"> Gallery </a></li>
+                        <li><a href="D:\Users\Skye\Documents\storefront\html\store.html"> Store </a></li>
+                        <li><a href="D:\Users\Skye\Documents\storefront\html\contact.html"> Contact </a></li>
+                    </ul>
+                    
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                        width="24" height="24"
+                        viewBox="0 0 24 24"
+                        style=" fill: #c9c9c9;"><path style="line-height:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;isolation:auto;mix-blend-mode:normal" d="M 2 5 L 2 7 L 22 7 L 22 5 L 2 5 z M 2 11 L 2 13 L 22 13 L 22 11 L 2 11 z M 2 17 L 2 19 L 22 19 L 22 17 L 2 17 z" font-weight="400" font-family="sans-serif" white-space="normal" overflow="visible"></path>
+                    </svg>
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="container-fluid second-header" id="second-header">
+
+            <div id="banner">
+                
+                <h1  class="title" id="title"> Skye Shirlow Collection </h1>
+                <h2 class="title-2"> Traditional and Digital Art </h2>
+                <img class="logoPlaceholder-2" id="logoPlaceholder-2" src="./images/logo_placeholder.png" alt="Logo Placeholder">
+
+            </div>
+
+                <div>
+
+                    <button class="menu-button-2" id="menu-2" onclick="menu_dropdown(); menu2_dropdown ();">
+
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 768 768">
+                            <g id="icomoon-ignore">
+                            </g>
+                            <path fill="#c9c9c9" d="M169.376 214.624l169.376 169.376-169.376 169.376c-12.512 12.512-12.512 32.768 0 45.248s32.768 12.512 45.248 0l169.376-169.376 169.376 169.376c12.512 12.512 32.768 12.512 45.248 0s12.512-32.768 0-45.248l-169.376-169.376 169.376-169.376c12.512-12.512 12.512-32.768 0-45.248s-32.768-12.512-45.248 0l-169.376 169.376-169.376-169.376c-12.512-12.512-32.768-12.512-45.248 0s-12.512 32.768 0 45.248z"></path>
+                        </svg>
+
+                    </button>
+                    
+                </div>
+
+        </div>
+
+    </header>
+
+    <div>
+
+        <img id="showPlaceholder" src="./images/show_placeholder.jpg" alt="Showcase Placeholder">
+
+    </div>
+
+    <div>
+
+        <h1 class="portfolio" id="portfolio"> Portfolio </h1>
+
+        <img class="divider" src="./images/divider.png" alt="Divider"/>
+            
+        <div id="portfolio_buttons" >
+            
+            <button id="all" class="btn active" onclick="filterSelection('all')"> All </button>
+            <button id="people" class="btn" onclick="filterSelection('people')"> People </button>
+            <button id="still-life" class="btn" onclick="filterSelection('still')"> Still-Life </button>
+            <button id="gaming" class="btn" onclick="filterSelection('gaming')"> Gaming </button>
+
+        </div>
+
+    </div>
+
+
+    <div class="row" id="port">
+
+        <div class="column people">
+
+            <div class="content">
+
+                <img class="people" id="plcholder" src="D:\Users\Skye\Documents\storefront\images\placeholder.png" alt="Placeholder"/>
+                <img class="people" id="plcholder" src="D:\Users\Skye\Documents\storefront\images\placeholder.png" alt="Placeholder"/>
+                <img class="people" id="plcholder" src="D:\Users\Skye\Documents\storefront\images\placeholder.png" alt="Placeholder"/>
+
+            </div>
+
+        </div>
+
+        <div class="column still">
+
+            <div class="content">
+
+                <img class="still" id="plcholder" src="D:\Users\Skye\Documents\storefront\images\placeholder.png" alt="Placeholder"/>
+                <img class="still" id="plcholder" src="D:\Users\Skye\Documents\storefront\images\placeholder.png" alt="Placeholder"/>
+
+            </div>
+
+        </div>
+
+        <div class="column gaming">
+
+            <div class="content">
+
+                <img class="gaming" id="plcholder" src="D:\Users\Skye\Documents\storefront\images\placeholder.png" alt="Placeholder"/>
+                <img class="gaming" id="plcholder" src="D:\Users\Skye\Documents\storefront\images\placeholder.png" alt="Placeholder"/>
+                <img class="gaming" id="plcholder" src="D:\Users\Skye\Documents\storefront\images\placeholder.png" alt="Placeholder"/>
+                <img class="gaming" id="plcholder" src="D:\Users\Skye\Documents\storefront\images\placeholder.png" alt="Placeholder"/>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="container-fluid abt">
+
+        <div class="row">
+
+            <div id="about_header" class="col-lg-12">
+
+                <h1 class="about" id="about"> About Me </h1>
+                <img class="divider" src="./images/divider.png" alt="Divider">
+
+            </div>
+
+            <div class="col-lg-12">
+
+                <p class="intro"> My name is Skye Shirlow. I was born and raised in South Africa, on the 12th of January, 1999. I am currently living in Johannesburg, South Africa.</p>
+
+                <h2 id="my_intro"> MY INTRODUCTION TO ART </h2>
+                <p class="intro" id="intro2"> 
+                    My mother used to love art, she was the most creative person I ever knew, and if I think back to what truly inspired me to start drawing and painting, it was watching and helping my mom with any kind of craft she was doing, and seeing how happy it made her.<br>
+                    <br>
+                    My sister and I definitely inherited her creativity and (somewhat) natural ability to draw and paint. But I definitely inherited my love for art from her.<br>
+                    <br>
+                    I remember looking up to my big sister when I was very young, because she was so good at drawing, and I would try so hard every day to practice my drawing because I wanted to be as good as her one day.<br>
+                    <br>
+                    It took me a little longer to hone my skills and find my style than it did for my sister, but I really started to notice my skill improving a lot by the time I was about 16/17. I decided to take art as a subject in high school, despite not really believing I was good enough at it to compare with the amazing artists in my school, but I quickly learnt not to compare myself to other artists, and rather to look at them for inspiration, and I found my marks improving from 50%/60% to my final matric mark of 97%. <br>
+                    <br>
+                    But marks are not everything, I really enjoy painting and drawing, it gives me a sense of fulfillment when I complete a piece that has taken a lot of work and time, and when I can make other people happy with my art, that is the most fulfilling.
+                </p>
+
+                <h3 id="subject"> MY SUBJECT MATTER </h3>
+                <p class="intro" id="subject_matter"> 
+                    I play a lot video games, and when I find a game with an amazing art style or story, or both, I cannot help but take some sort of inspiration from it.<br>
+                    <br>
+                    When I was only painting as a hobby, and had no intention to share my work with anyone else, I was just painting characters from the games I loved the most. <br>
+                    <br>
+                    I still enjoy doing that, and I know lots of other people like those pieces as well, but going forward, now that I am trying to share my art with the rest of the world, I have plans to make a lot more original works, with original characters who have their own stories
+                </p>
+
+                <img class="placeholder" src="./images/placeholder.png" alt="Placeholder">
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div>
+
+        <img id="endDivider" src="./images/end divider.png" alt="End Divider">
+
+            <div id="end_buttons">
+
+                <a href="D:\Users\Skye\Documents\storefront\html\contact.html" class="btn" role="button" id="contact"> Contact Me </a>
+                <a href="D:\Users\Skye\Documents\storefront\html\store.html" class="btn" role="button" id="store"> Store </a>
+                <a href="D:\Users\Skye\Documents\storefront\html\gallery.html" class="btn" role="button" id="gallery"> Gallery </a>
+
+            </div>
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="D:\Users\Skye\Documents\storefront\js\app.js"></script>
+
+</body>
+
+</html>

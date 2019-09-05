@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+
+<head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Skye Shirlow Art Store </title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type=text/css href="D:\Users\Skye\Documents\storefront\css\style_store.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+</head>
+
+
+<body class="body">
+
+        <header class="header">
+
+            <div class="container-fluid">
+                
+                <div id="banner">
+                                
+                    <h1 class="title" id="title"> Skye Shirlow Collection </h1>
+                    <h2 class="title-2"> Traditional and Digital Art </h2>
+                    <img id="logoPlaceholder" src="D:\Users\Skye\Documents\storefront\images\logo_placeholder.png" alt="Logo Placeholder">
+                
+                </div>
+
+                <div>
+                                    
+                    <button class="menu-button" id="menu" onclick="menu_dropdown(); menu2_dropdown ();">
+
+                        <ul class="menu-list" >
+                            <li><a href="D:\Users\Skye\Documents\storefront\index.html"> Home </a></li>
+                            <li><a href="D:\Users\Skye\Documents\storefront\html\about.html"> About </a></li>
+                            <li><a href="D:\Users\Skye\Documents\storefront\html\gallery.html"> Gallery </a></li>
+                            <li><a href="#"> Store </a></li>
+                            <li><a href="D:\Users\Skye\Documents\storefront\html\contact.html"> Contact </a></li>
+                        </ul>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                            width="24" height="24"
+                            viewBox="0 0 24 24"
+                            style=" fill: #c9c9c9;"><path style="line-height:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;isolation:auto;mix-blend-mode:normal" d="M 2 5 L 2 7 L 22 7 L 22 5 L 2 5 z M 2 11 L 2 13 L 22 13 L 22 11 L 2 11 z M 2 17 L 2 19 L 22 19 L 22 17 L 2 17 z" font-weight="400" font-family="sans-serif" white-space="normal" overflow="visible"></path>
+                        </svg>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="container-fluid second-header" id="second-header">
+
+                <div id="banner">
+                    
+                    <h1  class="title" id="title"> Skye Shirlow Collection </h1>
+                    <h2 class="title-2"> Traditional and Digital Art </h2>
+                    <img class="logoPlaceholder-2" id="logoPlaceholder-2" src="D:\Users\Skye\Documents\storefront\images\logo_placeholder.png" alt="Logo Placeholder">
+    
+                </div>
+    
+                <div>  
+
+                    <button class="menu-button-2" id="menu-2" onclick="menu_dropdown(); menu2_dropdown ();">
+
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 768 768">
+                            <g id="icomoon-ignore">
+                            </g>
+                            <path fill="#c9c9c9" d="M169.376 214.624l169.376 169.376-169.376 169.376c-12.512 12.512-12.512 32.768 0 45.248s32.768 12.512 45.248 0l169.376-169.376 169.376 169.376c12.512 12.512 32.768 12.512 45.248 0s12.512-32.768 0-45.248l-169.376-169.376 169.376-169.376c12.512-12.512 12.512-32.768 0-45.248s-32.768-12.512-45.248 0l-169.376 169.376-169.376-169.376c-12.512-12.512-32.768-12.512-45.248 0s-12.512 32.768 0 45.248z"></path>
+                        </svg>
+
+                    </button>
+                    
+                </div>
+
+            </div>
+
+    </header>
+
+
+    <div>
+
+        <div>
+
+            <button id="cart"> Cart </button>
+
+        </div>
+
+        <p id="art_shop"> <span> Art </span> Shop </p>      
+        <h1 id="store"> Store </h1>       
+        <img class="divider" src="D:\Users\Skye\Documents\storefront\images\divider.png" alt="Divider">
+
+    </div>
+
+
+    <!-- <div id="sorting_heading">
+
+        <p id="cat" >CATEGORIES</p>
+        <p id="sby" >SORT BY</p>
+        <p id="atype" >ART TYPE</p>
+        <p id="sas" >SIZE AND SHAPE</p>
+        <p id="ctheme" >COLOUR THEME</p>
+
+    </div> -->
+
+
+    <div class="container">
+        <div class="row">
+
+                <div class="store-buttons">
+        
+                    <div style=margin-right:20%;><p id="sorting_heading"> CATEGORIES </p></div>
+        
+                    <div id="cat_primary"><p> Choose your category </p></div>
+                    
+                    <button class="dropbtn" type="button" id="cat_drop" onclick=cat_dropdown()>
+
+                        <svg version="1.1" id="down-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 256 256" style="enable-background:new 0 0 256 256; fill:#c9c9c9;" xml:space="preserve">
+                            <g>
+                                <polygon points="225.813,48.907 128,146.72 30.187,48.907 0,79.093 128,207.093 256,79.093"/>
+                            </g>
+                        </svg>
+        
+                        <ul class="dropdown cat" id="cat_dropdown"> 
+                            <li><a type="button" class="btn"> All </a></li>
+                            <li><a type="button" class="btn"> People </a></li>
+                            <li><a type="button" class="btn"> Gaming </a></li>
+                            <li><a type="button" class="btn"> Still-Life </a></li>
+                            <li><a type="button" class="btn"> Nature </a></li>
+                            <li><a type="button" class="btn"> Sketches </a></li>
+                        </ul>
+        
+                    </button>
+        
+                </div>
+            
+                <div class="store-buttons"> 
+        
+                    <div style="margin-right: 20%"><p id="sorting_heading"> SORT BY </p></div>
+        
+                    <div id="sby_primary"><p> Sort By </p></div>
+        
+                    <button  class="dropbtn" type="button" id="sby_drop" onclick=sby_dropdown()>
+
+                        <svg version="1.1" id="down-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 256 256" style="enable-background:new 0 0 256 256; fill:#c9c9c9;" xml:space="preserve">
+                            <g>
+                                <polygon points="225.813,48.907 128,146.72 30.187,48.907 0,79.093 128,207.093 256,79.093"/>
+                            </g>
+                        </svg>  
+                        
+                        <ul class="dropdown sby" id="sby_dropdown"> 
+                            <li><a type="button" class="btn"> Most Popular </a></li>
+                            <li><a type="button" class="btn"> Lowest Price </a></li>
+                            <li><a type="button" class="btn"> Highest Price </a></li>
+                            <li><a type="button" class="btn"> Newest </a></li>
+                            <li><a type="button" class="btn"> Oldest </a></li>
+                            <li><a type="button" class="btn"> Alphabetical </a></li>
+                        </ul>
+        
+                    </button>
+        
+                </div>
+            
+                <div class="store-buttons"> 
+        
+                    <div style="margin-right: 20%" ><p id= "sorting_heading"> ART TYPE </p></div>
+        
+                    <div id="atype_primary"><p> Choose your type </p></div>
+        
+                    <button class="dropbtn" type="button" id="atype_drop" onclick=atype_dropdown()>
+
+                        <svg version="1.1" id="down-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 256 256" style="enable-background:new 0 0 256 256; fill:#c9c9c9;" xml:space="preserve">
+                            <g>
+                                <polygon points="225.813,48.907 128,146.72 30.187,48.907 0,79.093 128,207.093 256,79.093"/>
+                            </g>
+                        </svg>
+                        
+                        <ul class="dropdown atype" id="atype_dropdown"> 
+                            <li><a type="button" class="btn"> Acrylic on Canvas </a></li>
+                            <li><a type="button" class="btn"> Acrylic on Artboard </a></li>
+                            <li><a type="button" class="btn"> Pencil on Paper </a></li>
+                            <li><a type="button" class="btn"> Print (Pencil Drawing) </a></li>
+                            <li><a type="button" class="btn"> Print (Painting) </a></li>
+                        </ul> 
+        
+                    </button>
+        
+                </div>
+            
+                <!-- <div class="" > 
+        
+                    <div ><p id= "sorting_heading"> SIZE AND SHAPE </p></div>
+        
+                    <div id ="sas_primary"><p> Choose your shape </p></div> 
+        
+                    <button class="dropbtn" type="button" id ="sas_drop" onclick=sas_dropdown()> ^
+                        
+                        <ul class="dropdown sas" id="sas_dropdown"> 
+                            <li><a type="button" class="btn"> Portrait </a></li>
+                            <li><a type="button" class="btn"> Landscape </a></li>
+                            <li><a type="button" class="btn"> Small (size) </a></li>
+                            <li><a type="button" class="btn"> Medium (size) </a></li>
+                            <li><a type="button" class="btn"> Large (size) </a></li>
+                        </ul>
+        
+                    </button>
+        
+                </div> -->
+            
+                <div class="store-buttons">
+        
+                    <div style="margin-right: 20%" ><p id="sorting_heading"> COLOUR THEME </p></div>
+        
+                    <div id="ctheme_primary"><p> Choose your colour </p></div>
+        
+                    <button class="dropbtn" type="button" id="ctheme_drop" onclick=ctheme_dropdown()>
+
+                        <svg version="1.1" id="down-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                viewBox="0 0 256 256" style="enable-background:new 0 0 256 256; fill:#c9c9c9;" xml:space="preserve">
+                            <g>
+                                <polygon points="225.813,48.907 128,146.72 30.187,48.907 0,79.093 128,207.093 256,79.093"/>
+                            </g>
+                        </svg>
+                        
+                        <ul class="dropdown ctheme" id="ctheme_dropdown"> 
+                            <li><a type="button" class="btn"> Warm Colours </a></li>
+                            <li><a type="button" class="btn"> Cool Colours </a></li>
+                            <li><a type="button" class="btn"> Bright Colours </a></li>
+                            <li><a type="button" class="btn"> Dark Colours </a></li>
+                            <li><a type="button" class="btn"> Neutral Colours </a></li>
+                        </ul>
+        
+                    </button>
+        
+                </div>
+
+        </div>
+    </div>
+
+
+    <div>
+
+        <img class="divider" src="D:\Users\Skye\Documents\storefront\images\divider.png" alt="Divider">
+
+    </div>   
+    
+    <div  class="row" id="port">
+
+        <div class="column people">
+
+                <div class="content">
+    
+                    <img class="people" id="plcholder" src="D:\Users\Skye\Documents\storefront\images\placeholder.png" alt="Placeholder"/>
+                    <img class="people" id="plcholder" src="D:\Users\Skye\Documents\storefront\images\placeholder.png" alt="Placeholder"/>
+                    <img class="people" id="plcholder" src="D:\Users\Skye\Documents\storefront\images\placeholder.png" alt="Placeholder"/>
+    
+                </div>
+    
+            </div>
+    
+    
+            <div class="column still">
+    
+                <div class="content">
+    
+                    <img class="still" id="plcholder" src="D:\Users\Skye\Documents\storefront\images\placeholder.png" alt="Placeholder"/>
+                    <img class="still" id="plcholder" src="D:\Users\Skye\Documents\storefront\images\placeholder.png" alt="Placeholder"/>
+    
+                </div>
+    
+            </div>
+    
+    
+            <div class="column gaming">
+    
+                <div class="content">
+    
+                    <img class="gaming" id="plcholder" src="D:\Users\Skye\Documents\storefront\images\placeholder.png" alt="Placeholder"/>
+                    <img class="gaming" id="plcholder" src="D:\Users\Skye\Documents\storefront\images\placeholder.png" alt="Placeholder"/>
+                    <img class="gaming" id="plcholder" src="D:\Users\Skye\Documents\storefront\images\placeholder.png" alt="Placeholder"/>
+                    <img class="gaming" id="plcholder" src="D:\Users\Skye\Documents\storefront\images\placeholder.png" alt="Placeholder"/>
+    
+                </div>
+    
+            </div>
+
+    </div>
+
+
+    <div>
+
+        <img class="divider-2" src="D:\Users\Skye\Documents\storefront\images\divider.png" alt="Divider">
+
+    </div>
+
+
+    <div id="page_btn">
+
+        <div class="btn-group">
+
+            <button id="previous_btn"> < </button>
+            <p id="previous"> Previous </p>
+
+        </div>
+
+        <div class="btn-group">
+
+            <p id="next"> Next </p>
+            <button id="next_btn"> > </button>
+
+        </div>
+
+    </div>
+
+    <div>
+
+        <img id="endDivider" src="D:\Users\Skye\Documents\storefront\images\end divider.png" alt="End Divider">
+        <a href="D:\Users\Skye\Documents\storefront\html\contact.html" class="btn" role="button" id="contact"> Contact Me </a>
+        
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="D:\Users\Skye\Documents\storefront\js\app.js"></script>
+
+</body>
